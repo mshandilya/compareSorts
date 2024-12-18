@@ -105,6 +105,7 @@ int main() {
     std::chrono::duration<long long int, std::ratio<1, (long long int) 1e9>> execution_time = t0, total_time = t0; // initialized with time zero
     std::vector<unsigned long long int> array(1000000); // array storing the array to be sorted
     long long int trial = 0, max_trials = 200, comparisons_count, total_comp_count = 0;
+
     while(trial++ < max_trials) {
         // loading the array from the input data file
         for (int i = 0; i < 1000000; i++)
@@ -121,9 +122,10 @@ int main() {
             exit(0);
         }
         LOG_RESULT; // logging the appropriate result to the output file
-        total_comp_count += comparisons_count; 
+        total_comp_count += comparisons_count;
         total_time += execution_time;
     }
+
     std::cout << "Mean comparisons performed:  " << ((long double)total_comp_count) / max_trials << std::endl;
     std::cout << "Mean time taken per sorting: " << total_time / ((long double)max_trials) << std::endl;
     return 0;
