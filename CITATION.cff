@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: A Comparative Study of Merge Sort and Quick Sort
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mrigankashekhar
+    family-names: Shandilya
+    email: mrigankashekhar.shandilya@iitgn.ac.in
+    affiliation: Indian Institute of Technology Gandhinagar
+  - given-names: Surender
+    family-names: Baswana
+    email: sbaswana@cse.iitk.ac.in
+    affiliation: Indian Institute of Technology Kanpur
+    orcid: 'https://orcid.org/0000-0001-8657-7182'
+repository-code: 'https://github.com/mshandilya/compareSorts'
+keywords:
+  - Sorting Algorithms
+  - Merge Sort
+  - Quick Sort
+  - Empirical Evaluation
+license: MIT
